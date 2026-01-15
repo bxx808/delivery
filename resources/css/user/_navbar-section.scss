@@ -1,0 +1,30 @@
+.navbar {
+    border-bottom: 1px solid #FFFFFF1A;
+    .container {
+        .navbar_content {
+            .items {
+                display: flex;
+                justify-content: center;
+                gap: 45px;
+
+                .item {
+                    padding: 29px 0;
+                    a {
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: rgba(255, 255, 255, 0.55);
+                        padding-bottom: 28.5px;
+
+                        &:hover {
+                            border-bottom: 3px solid $active-green;
+                            filter: drop-shadow(0 5px 4px rgba(114, 164, 121, 0.3));
+                            font-weight: 500;
+                            transition: all 0.3s ease;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

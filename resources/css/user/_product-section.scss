@@ -1,0 +1,97 @@
+.products_grid{
+    .container{
+        display: flex;
+        justify-content: center;
+        .product_content{
+            .category{
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
+                .category_title{
+                    font-weight: 700;
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    border-left: 4px solid $active-green;
+                    margin-left: 46px;
+                    margin-bottom: 50px;
+                    padding-left: 19px;
+                    margin-top: 50px;
+                }
+                .dishes_grid{
+                    .cards{
+                        display: flex;
+                        gap: 16px;
+                        .card{
+                            width: 325px;
+                            height: 385px;
+                            border-radius: 10px;
+                            background: $product_card;
+                            margin-bottom: 50px;
+                            .top_content{
+                                .images{
+                                    img{
+                                        width: 325px;
+                                        height: 227px;
+                                    }
+                                }
+                            }
+                            .bottom_content{
+                                padding: 15px 15px 18px 20px;
+                                .top_title{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    h1{
+                                        font-size: 22px;
+                                        font-weight: 700;
+                                    }
+                                    p{
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                    }
+                                }
+                                .description{
+                                    width: 269px;
+                                    margin-bottom: 15px;
+                                    span{
+                                        font-weight: 400;
+                                        font-size: 13px;
+                                        color: $description;
+                                    }
+                                }
+                                .price{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    p{
+                                        font-weight: 600;
+                                        font-size: 20px;
+                                    }
+                                    .basket_price{
+                                        cursor: pointer;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 137px;
+                                        height: 44px;
+                                        border-radius: 10px;
+                                        background: $active-green;
+                                        .basket_content{
+                                            display: flex;
+                                            text-align: center;
+                                            gap: 10px;
+                                            .title{
+                                                margin-top: 2px;
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
