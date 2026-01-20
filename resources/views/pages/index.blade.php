@@ -82,6 +82,7 @@
                     <div class="dishes_grid">
                         <div class="cards">
                             <div class="card">
+                                <div class="quantity">5</div>
                                 <div class="top_content">
                                     <div class="images">
                                         <img src="{{asset('images/icons/ProdCard.png')}}" alt="">
@@ -99,15 +100,13 @@
                                         </span>
                                     </div>
                                     <div class="price">
+                                        <button class="counter">
+                                            <img src="{{asset('images/icons/dec.png')}}">
+                                        </button>
                                         <p>620 ₽</p>
-                                        <a class="basket_price">
-                                            <div class="basket_content">
-                                                <span class="title">В корзину</span>
-                                                <div class="icon_basket">
-                                                    <img src="{{asset('images/icons/Buy.png')}}">
-                                                </div>
-                                            </div>
-                                        </a>
+                                        <button class="counter">
+                                            <img src="{{asset('images/icons/inc.png')}}">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -240,6 +239,7 @@
                                 </div>
                             </div>
                             <div class="card">
+                                <div class="quantity">5</div>
                                 <div class="top_content">
                                     <div class="images">
                                         <img src="{{asset('images/icons/ProdCard.png')}}" alt="">
@@ -257,15 +257,13 @@
                                         </span>
                                     </div>
                                     <div class="price">
+                                        <button class="counter">
+                                            <img src="{{asset('images/icons/dec.png')}}">
+                                        </button>
                                         <p>620 ₽</p>
-                                        <a class="basket_price">
-                                            <div class="basket_content">
-                                                <span class="title">В корзину</span>
-                                                <div class="icon_basket">
-                                                    <img src="{{asset('images/icons/Buy.png')}}">
-                                                </div>
-                                            </div>
-                                        </a>
+                                        <button class="counter">
+                                            <img src="{{asset('images/icons/inc.png')}}">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -428,6 +426,7 @@
                                 </div>
                             </div>
                             <div class="card">
+                                <div class="quantity">5</div>
                                 <div class="top_content">
                                     <div class="images">
                                         <img src="{{asset('images/icons/ProdCard.png')}}" alt="">
@@ -445,15 +444,13 @@
                                         </span>
                                     </div>
                                     <div class="price">
+                                        <button class="counter">
+                                            <img src="{{asset('images/icons/dec.png')}}">
+                                        </button>
                                         <p>620 ₽</p>
-                                        <a class="basket_price">
-                                            <div class="basket_content">
-                                                <span class="title">В корзину</span>
-                                                <div class="icon_basket">
-                                                    <img src="{{asset('images/icons/Buy.png')}}">
-                                                </div>
-                                            </div>
-                                        </a>
+                                        <button class="counter">
+                                            <img src="{{asset('images/icons/inc.png')}}">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
