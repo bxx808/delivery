@@ -10,4 +10,9 @@ class PageController extends Controller
     {
         return view('pages.index');
     }
+
+    public function product()
+    {
+        return view('pages.product');
+    }
 }

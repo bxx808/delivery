@@ -1,0 +1,81 @@
+.contact {
+    .container {
+        .contact_content {
+            background-image: url('/images/icons/map.png');
+            width: 100%;
+            height: 665px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .contact_card {
+                position: absolute;
+                width: 526px;
+                height: 405px;
+                border-radius: 15px;
+                background-color: $contact-card;
+                box-shadow: 0px 0px 70px 0px #00000026;
+                bottom: 5%;
+                left: 7%;
+                h1{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 23px;
+                    margin: 25px 0 10px 43px;
+                }
+                .items{
+                    .item{
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        padding: 0 40px;
+                        .item_content{
+                            span{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .call_contact{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 17px;
+                    gap: 33px;
+                    button{
+                        width: 211px;
+                        height: 59px;
+                        border-radius: 10px;
+                        background: $call-green;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 13px;
+                    }
+                    .num{
+                        strong{
+                            font-weight: 700;
+                            font-size: 23px;
+                        }
+                        p{
+                            font-weight: 400;
+                            font-size: 14.3px;
+                        }
+                    }
+                }
+                .socials{
+                    display: flex;
+                    margin-top: 30px;
+                    justify-content: center;
+                    p{
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-right: 26px;
+                    }
+                    a{
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

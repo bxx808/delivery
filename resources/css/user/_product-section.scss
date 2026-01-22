@@ -1,8 +1,10 @@
 .products_grid{
+    position: relative;
     .container{
         display: flex;
         justify-content: center;
         .product_content{
+            margin-bottom: 553px;
             .category{
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
                 .category_title{
@@ -26,6 +28,24 @@
                             background: $product_card;
                             margin-bottom: 50px;
                             position: relative;
+                            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                            &:hover {
+                                box-shadow: 0px 30px 45px 0px #2B282899;
+                                transform: translateY(-15px) scale(1.03);
+
+                                // Дополнительные эффекты:
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    height: 4px;
+                                    background: linear-gradient(90deg, #79B282, #4CAF50);
+                                    animation: slideIn 0.4s ease;
+                                }
+                                }
 
                             .quantity{
                                 position: absolute;
@@ -117,6 +137,85 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+            .banner{
+                z-index: 1000;
+                position: absolute;
+                bottom: -7%;
+                background-image: url('/images/icons/banner.png');
+                background-repeat: no-repeat;
+                width: 1345px;
+                height: 610px;
+                background-size: cover;
+                display: flex;
+                .info_banner{
+                    padding: 100px 0 100px 70px;
+                    h1{
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-size: 32px;
+                        margin-bottom: 25px;
+                    }
+                    p{
+                        color: $description;
+                        width: 550px;
+                        line-height: 25px;
+                        margin-bottom: 60px;
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                    button{
+                        width: 223px;
+                        height: 59px;
+                        border-radius: 10px;
+                        background: #FFFFFF0D;
+                        border: 1px solid #FFFFFF33;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+                .cards_banner{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    margin: 71px 0 0 160px;
+                    .card{
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 228px;
+                        height: 228px;
+                        background-color: $banner-card;
+                        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                        &:hover{
+                           img{
+                               filter: invert(55%) sepia(20%) saturate(800%)
+                               hue-rotate(90deg) brightness(90%) contrast(90%);
+                           }
+                            span{
+                                color: #79B282;
+                            }
+                        }
+
+                        img{
+                            filter: brightness(0) saturate(100%) invert(100%);
+                            display: block;
+                        }
+                        span{
+                            font-weight: 400;
+                            font-size: 18px;
+                            margin-top: 26px;
+                        }
+                    }
+
+                    .card:nth-child(-n+2) {
+                        margin-bottom: -70px;
                     }
                 }
             }
